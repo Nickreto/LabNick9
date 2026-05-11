@@ -41,8 +41,11 @@ namespace WpfApp1
             }
         }
 
-        private void Log(string message) => txtLog.AppendText($"{message}\n");
-
+        private void Log(string message)
+        {
+            txtLog.AppendText($"{message}\n");
+        }
+        
         private void BtnSquare_Click(object sender, RoutedEventArgs e)
         {
             if (TryGetTriangles(out RightTriangle t1, out _))
